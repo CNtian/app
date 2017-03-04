@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="email=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/index.css" >
+
+</head>
+<body >
+    <div class="swiper-container">
+  				<div id="music">
+            		<span class="iconfont icon-music"></span>
+            		<audio  src="resources/mp3.mp3"  preload="auto" id="media" autoplay></audio>
+            	</div>
+        <div class="swiper-wrapper last">
+            <div class="swiper-slide me only" style="background:url(images/true3.jpg);background-size: cover;">
+            	<p class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">大家好,我是田洋</p>
+            	<p class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1.0s" swiper-animate-delay="1.3s">DOTA2天梯10000分选手</p>
+            	<p class="ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1.5s" swiper-animate-delay="1.6s">你不信吗?话不多说接下来上图</p>
+            </div>
+            <div class="swiper-slide Me" style="background: url(images/true2.jpg); background-size: cover;">
+            	<p class="why">话不多说,先上图:<img src="images/school.jpg"></p>
+            	<p class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">你没看错<br>在下正是毕业于重庆工商大学</p>
+            	<p class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">在校学习技能时间:2010年-2014年</p>
+            	<p class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.6s">所学技能:前端</p>
+            	<p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.2s" swiper-animate-delay="0.8s">修行经历:VALUE、腾讯等</p>
+            </div>
+            <div class="swiper-slide third" style="background: url(images/true1.jpg);background-size: cover;">
+            	<p>技能熟练度:</p>
+            	<div>jquery:<p class="ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><img src="images/star.png"></p></div>
+            	<div>zepto:<p class="ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="0.8s" swiper-animate-delay="0.3s"><img src="images/star.png"></p></div>
+            	<div>angular:<p class="ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="1.1s" swiper-animate-delay="0.3s"><img src="images/star.png"></p></div>
+            	<div>Javasrcipt:<p class="ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="1.4s" swiper-animate-delay="0.3s"><img src="images/star.png"></p></div>
+            	<div>mongodb,node.js:<p class="ani" swiper-animate-effect="fadeInRightBig" swiper-animate-duration="1.7s" swiper-animate-delay="0.3s"><img src="images/star.png"></p></div>
+             </div>
+            <div class="swiper-slide four" style="background: url(images/true.jpg);background-size: cover;">
+            	<p class="ani" swiper-animate-effect="flipInX" swiper-animate-duration="1.7s" swiper-animate-delay="0.3s"><img src="images/go1.jpg"></p>
+            	<p class="ani" swiper-animate-effect="flipInX" swiper-animate-duration="1.7s" swiper-animate-delay="0.8s">放血,放TMD血</p>
+            	<p class="ani" swiper-animate-effect="flipInX" swiper-animate-duration="1.7s" swiper-animate-delay="0.8s"><img src="images/go2.jpg"></p>
+            </div>
+	        <div class="swiper-slide me to" style="background: url(images/bg7.jpg);background-size: cover;">
+	            <p class="ani" swiper-animate-effect="rubberBand" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">扫描下方二维码一起玩泥吧</p>
+	            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><img src="images/wechat.jpg"></p>
+	           <button id="btn">点击进入详情</button>
+            </div>	
+        </div>
+    </div>
+
+
+    <div class="detail" id="mainContent" onload="loaded()">
+        	<!-- 头部 -->
+        <div id="head" id="header">
+			<div><span class="iconfont icon-tupian"></span></div>
+			<div>
+				<span></span>
+				
+			</div>
+			<div>
+				
+				
+				<div><span class="iconfont icon-xiangji"></span></div>
+			</div>
+		</div>
+				<!-- 中间 -->
+		<div class="center" id="wrapper1">
+		</div>
+		
+		<div id="wrapper">
+			<div id="scroller">
+				<ul id="projects">
+				</ul>
+			</div>
+		</div>
+		<div id="wrapper2">
+			<div id="scroller2">
+				<ul id="projects2">
+				</ul>
+			</div>
+		</div>
+		<div id="wrapper3">
+			<div id="scroller3">
+				<ul id="projects3">
+				</ul>
+			</div>
+		</div>
+
+		<!-- 底部 -->
+		<div id="food">
+			<div id="bottom_1">
+				<span id="icon_1" class="iconfont icon-jinengquanmian"></span>
+				<span>技能</span>
+			</div>
+			<div id="bottom_1">
+				<span id="icon_1" class="iconfont icon-xiangmujingli"></span>
+				<span>经历</span>
+			</div>
+			<div id="bottom_1">
+				<span id="icon_1" class="iconfont icon-xiangmu"></span>
+				<span>项目</span>
+			</div>
+			<div id="bottom_1">
+				<span id="icon_1" class="iconfont icon-wode"></span>
+				<span>我</span>
+			</div>
+		</div>
+	</div>
+	
+
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
